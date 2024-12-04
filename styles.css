@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1a1a1a;
+}
+
+.ornament {
+  display: grid;
+  grid-template-columns: repeat(10, 50px);
+  grid-template-rows: repeat(10, 50px);
+}
+
+.fill {
+  background-color: green;
+}
+
+.fill-left {
+  border-left: 25px solid transparent;
+  border-right: 25px solid green;
+  border-bottom: 25px solid green;
+  border-top: 25px solid transparent;
+}
+
+.fill-right {
+  border-left: 25px solid green;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid green;
+  border-top: 25px solid transparent;
+}
+
+.fill-base-left {
+  background-color: rgb(85, 21, 21);
+  border-bottom-left-radius: 30%;
+}
+
+.fill-base-right {
+  background-color: rgb(85, 21, 21);
+  border-bottom-right-radius: 30%;
+}
+
+.fill-round-left {
+  border-left: 25px solid transparent;
+  border-right: 25px solid green;
+  border-bottom: 25px solid green;
+  border-top: 25px solid transparent;
+  border-bottom-left-radius: 60%;
+}
+
+.fill-round-right {
+  border-left: 25px solid green;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid green;
+  border-top: 25px solid transparent;
+  border-bottom-right-radius: 60%;
+}
+
+span:hover {
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: font-size 0.2s;
+}
+
+.fill-top-left {
+  background: linear-gradient(rgb(183, 183, 7) 1%, yellow 80%, red);
+  border-top-left-radius: 70%;
+  border-bottom-left-radius: 5%;
+}
+
+.fill-top-right {
+  background: linear-gradient(rgb(183, 183, 7) 1%, yellow 80%, red);
+  border-top-right-radius: 70%;
+  border-bottom-right-radius: 5%;
+}
+
+.ring-left {
+  border-right: 2px solid yellow;
+}
+
+.ring-right {
+  border: 2px solid yellow;
+  border-radius: 100% 0% 100% 0% / 50% 0% 100% 50% ;
+}
